@@ -1,0 +1,14 @@
+﻿:root {
+  --color-primary: #b91c1c;
+  --color-primary-dark: #7f1d1d;
+  --color-background-light: #f8f9fa;
+  --color-background-dark: #0f1115;
+  --color-neutral-dark: #1a1d23;
+  --color-card-dark: #16191f;
+  --color-primary-rgb: 185, 28, 28;
+  --color-background-dark-rgb: 15, 17, 21;
+}
+
+.dark {
+  color-scheme: dark;
+}

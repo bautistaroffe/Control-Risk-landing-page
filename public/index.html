@@ -1,0 +1,431 @@
+﻿<!DOCTYPE html>
+<html class="dark" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Control Risk | Seguridad Integral en Cordoba</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+    <link rel="stylesheet" href="/styles/tokens.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "var(--color-primary)",
+              "primary-dark": "var(--color-primary-dark)",
+              "background-light": "var(--color-background-light)",
+              "background-dark": "var(--color-background-dark)",
+              "neutral-dark": "var(--color-neutral-dark)",
+              "card-dark": "var(--color-card-dark)",
+            },
+            fontFamily: {
+              display: ["Manrope", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body id="top" class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+    <header class="fixed top-0 z-50 w-full border-b border-white/10 glass-header">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a class="flex items-center gap-3" href="/#top" aria-label="Ir al inicio">
+          <div class="size-10 bg-primary flex items-center justify-center rounded-lg text-white">
+            <span class="material-symbols-outlined text-3xl">shield_person</span>
+          </div>
+          <span class="text-xl font-800 tracking-tight text-white uppercase">Control <span class="text-primary">Risk</span></span>
+        </a>
+        <nav class="hidden md:flex items-center gap-10">
+          <a class="text-sm font-semibold text-white hover:text-primary transition-colors" href="/#top">Inicio</a>
+          <a class="text-sm font-semibold text-white/70 hover:text-primary transition-colors" href="/#servicios">Servicios</a>
+          <a class="text-sm font-semibold text-white/70 hover:text-primary transition-colors" href="/#nosotros">Nosotros</a>
+          <a class="text-sm font-semibold text-white/70 hover:text-primary transition-colors" href="/trabaja-con-nosotros.html">Trabaja con nosotros</a>
+          <a class="text-sm font-semibold text-white/70 hover:text-primary transition-colors" href="/contacto.html">Contacto</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <a class="btn-glass px-6 py-2.5 rounded-full text-sm font-bold transition-all active:scale-95" href="/solicita-presupuesto.html">
+            Solicitar Presupuesto
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-20">
+      <section class="relative h-[85vh] min-h-[600px] flex items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+  <div class="absolute inset-0 bg-[url('/assets/gif_fondo.gif')] bg-cover bg-center"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-background-dark via-background-dark/85 to-background-dark/40 z-10"></div>
+</div>
+        <div class="relative z-20" max-w-7xl mx-auto px-6 w-full">
+          <div class="max-w-2xl space-y-8">
+            <div class="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 px-4 py-2 rounded-full">
+              <span class="material-symbols-outlined text-primary text-sm">verified_user</span>
+              <span class="text-xs font-bold text-primary tracking-wider uppercase">Trayectoria y Confianza</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-800 text-white leading-[1.1] tracking-tight">
+              Seguridad Integral para su <span class="text-primary text-glow">Tranquilidad</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-100 leading-relaxed font-light drop-shadow-md">
+              Mas de 20 anos de trayectoria en Cordoba protegiendo lo que mas importa con tecnologia de vanguardia y personal altamente capacitado.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a class="btn-glass px-8 py-4 rounded-full text-base font-bold transition-all flex items-center justify-center gap-2 group" href="/solicita-presupuesto.html">
+                Solicitar Presupuesto
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </a>
+              <a class="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border border-white/20 px-8 py-4 rounded-full text-base font-bold transition-all" href="/#servicios">
+                Ver Servicios
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-12 bg-white dark:bg-neutral-dark overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 mb-8">
+          <p class="text-center text-sm font-bold text-slate-500 uppercase tracking-widest">Empresas que confian en nosotros</p>
+        </div>
+        <div class="logo-carousel-container relative">
+          <div class="animate-scroll flex items-center gap-16 md:gap-24 px-8">
+            <div class="flex items-center gap-3 grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all cursor-default">
+              <span class="material-symbols-outlined text-4xl">factory</span>
+              <span class="font-bold text-xl dark:text-white">INDUSTRIA GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-3 grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all cursor-default">
+              <span class="material-symbols-outlined text-4xl">location_city</span>
+              <span class="font-bold text-xl dark:text-white">BARRIO NORTE</span>
+            </div>
+            <div class="flex items-center gap-3 grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all cursor-default">
+              <span class="material-symbols-outlined text-4xl">account_balance</span>
+              <span class="font-bold text-xl dark:text-white">BANCO CIUDAD</span>
+            </div>
+            <div class="flex items-center gap-3 grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all cursor-default">
+              <span class="material-symbols-outlined text-4xl">shopping_cart</span>
+              <span class="font-bold text-xl dark:text-white">RETAIL SUR</span>
+            </div>
+            <div class="flex items-center gap-3 grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all cursor-default">
+              <span class="material-symbols-outlined text-4xl">local_hospital</span>
+              <span class="font-bold text-xl dark:text-white">SALUD TOTAL</span>
+            </div>
+            <div class="flex items-center gap-3 grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all cursor-default">
+              <span class="material-symbols-outlined text-4xl">domain</span>
+              <span class="font-bold text-xl dark:text-white">CORP CENTER</span>
+            </div>
+            <div class="flex items-center gap-3 grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all cursor-default">
+              <span class="material-symbols-outlined text-4xl">factory</span>
+              <span class="font-bold text-xl dark:text-white">INDUSTRIA GLOBAL</span>
+            </div>
+            <div class="flex items-center gap-3 grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all cursor-default">
+              <span class="material-symbols-outlined text-4xl">location_city</span>
+              <span class="font-bold text-xl dark:text-white">BARRIO NORTE</span>
+            </div>
+            <div class="flex items-center gap-3 grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all cursor-default">
+              <span class="material-symbols-outlined text-4xl">account_balance</span>
+              <span class="font-bold text-xl dark:text-white">BANCO CIUDAD</span>
+            </div>
+            <div class="flex items-center gap-3 grayscale opacity-50 hover:opacity-100 hover:grayscale-0 transition-all cursor-default">
+              <span class="material-symbols-outlined text-4xl">shopping_cart</span>
+              <span class="font-bold text-xl dark:text-white">RETAIL SUR</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-background-light dark:bg-background-dark" id="servicios">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <h2 class="text-primary font-bold tracking-widest text-sm uppercase">Nuestras Soluciones</h2>
+            <h3 class="text-4xl font-800 text-slate-900 dark:text-white">Areas de Especializacion</h3>
+            <p class="text-slate-600 dark:text-slate-400">Brindamos servicios modulares y adaptables para cubrir cada angulo de riesgo en su organizacion o propiedad.</p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="group p-8 bg-white dark:bg-neutral-dark border border-slate-200 dark:border-white/5 rounded-xl hover:border-primary/50 transition-all duration-300 flex flex-col items-start gap-6 shadow-xl shadow-black/5">
+              <div class="size-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <span class="material-symbols-outlined text-3xl">admin_panel_settings</span>
+              </div>
+              <div class="space-y-3">
+                <h4 class="text-xl font-bold dark:text-white">Seguridad Fisica</h4>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                  Guardias y vigilancia presencial con personal altamente entrenado y protocolos de accion inmediata.
+                </p>
+              </div>
+            </div>
+            <div class="group p-8 bg-white dark:bg-neutral-dark border border-slate-200 dark:border-white/5 rounded-xl hover:border-primary/50 transition-all duration-300 flex flex-col items-start gap-6 shadow-xl shadow-black/5">
+              <div class="size-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <span class="material-symbols-outlined text-3xl">videocam</span>
+              </div>
+              <div class="space-y-3">
+                <h4 class="text-xl font-bold dark:text-white">Seguridad Virtual</h4>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                  Monitoreo 24/7, sistemas de alarmas inteligentes, CCTV avanzado y control de accesos biometricos.
+                </p>
+              </div>
+            </div>
+            <div class="group p-8 bg-white dark:bg-neutral-dark border border-slate-200 dark:border-white/5 rounded-xl hover:border-primary/50 transition-all duration-300 flex flex-col items-start gap-6 shadow-xl shadow-black/5">
+              <div class="size-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <span class="material-symbols-outlined text-3xl">hub</span>
+              </div>
+              <div class="space-y-3">
+                <h4 class="text-xl font-bold dark:text-white">Seguridad Combinada</h4>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                  La integracion perfecta entre tecnologia de punta y presencia fisica para una cobertura total.
+                </p>
+              </div>
+            </div>
+            <div class="group p-8 bg-white dark:bg-neutral-dark border border-slate-200 dark:border-white/5 rounded-xl hover:border-primary/50 transition-all duration-300 flex flex-col items-start gap-6 shadow-xl shadow-black/5">
+              <div class="size-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <span class="material-symbols-outlined text-3xl">add_alert</span>
+              </div>
+              <div class="space-y-3">
+                <h4 class="text-xl font-bold dark:text-white">App Control Risk S.O.S</h4>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                  Plataforma movil propia de asistencia y alertas en tiempo real para una respuesta coordinada.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 p-6 bg-primary/5 border border-primary/10 rounded-xl flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-4">
+              <div class="size-12 bg-primary rounded-full flex items-center justify-center text-white">
+                <span class="material-symbols-outlined">cleaning_services</span>
+              </div>
+              <div>
+                <h5 class="font-bold dark:text-white">Servicios Complementarios</h5>
+                <p class="text-sm text-slate-600 dark:text-slate-400">Ofrecemos soluciones de Limpieza Integral para complementar la gestion de sus instalaciones.</p>
+              </div>
+            </div>
+            <button class="text-primary font-bold hover:underline">Consultar por Limpieza</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 relative overflow-hidden" id="nosotros">
+        <div class="absolute inset-0 bg-primary/5 dark:bg-primary/[0.02]"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+              <div class="absolute -top-4 -left-4 w-24 h-24 bg-primary/20 rounded-full blur-3xl"></div>
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  alt="Sede Control Risk"
+                  class="w-full aspect-[4/3] object-cover"
+                  src="/assets/imagen_nuestra_empresa.jpg"
+                />
+                <div class="absolute bottom-6 left-6 bg-white dark:bg-background-dark p-6 rounded-xl shadow-xl border border-primary/20">
+                  <div class="flex items-center gap-4">
+                    <div class="text-4xl font-800 text-primary">20</div>
+                    <div class="text-sm font-bold leading-tight dark:text-white">Anos de Liderazgo<br />en Cordoba</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-8">
+              <div class="space-y-4">
+                <h2 class="text-primary font-bold tracking-widest text-sm uppercase">Nuestra Empresa</h2>
+                <h3 class="text-4xl font-800 text-slate-900 dark:text-white leading-tight">Mision y Vision</h3>
+                <p class="text-lg text-slate-600 dark:text-slate-400">
+                  Ubicados en <strong>Mariano Larra 3375, Barrio Urca</strong>, somos una empresa comprometida con la excelencia. Nuestra mision es brindar seguridad y confianza mediante servicios de alta calidad, mientras que nuestra vision es ser referentes regionales en innovacion y efectividad preventiva.
+                </p>
+              </div>
+              <div class="grid gap-6">
+                <div class="flex gap-4">
+                  <div class="shrink-0 size-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined">gavel</span>
+                  </div>
+                  <div>
+                    <h5 class="text-lg font-bold dark:text-white">Habilitacion Provincial</h5>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Contamos con todas las habilitaciones y registros provinciales requeridos para operar con maxima legalidad.</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="shrink-0 size-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined">workspace_premium</span>
+                  </div>
+                  <div>
+                    <h5 class="text-lg font-bold dark:text-white">Calidad Certificada</h5>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Nos encontramos en proceso de certificacion bajo normas <strong>ISO 9001</strong> para estandarizar nuestra excelencia operativa.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-24 bg-white dark:bg-neutral-dark" id="sectores">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <h3 class="text-3xl font-800 dark:text-white">Sectores que Protegemos</h3>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
+            <div class="space-y-3">
+              <div class="size-20 mx-auto bg-slate-100 dark:bg-background-dark rounded-full flex items-center justify-center text-primary border border-slate-200 dark:border-white/5">
+                <span class="material-symbols-outlined text-4xl">corporate_fare</span>
+              </div>
+              <span class="font-bold text-sm dark:text-slate-300">Empresas</span>
+            </div>
+            <div class="space-y-3">
+              <div class="size-20 mx-auto bg-slate-100 dark:bg-background-dark rounded-full flex items-center justify-center text-primary border border-slate-200 dark:border-white/5">
+                <span class="material-symbols-outlined text-4xl">holiday_village</span>
+              </div>
+              <span class="font-bold text-sm dark:text-slate-300">Barrios Privados</span>
+            </div>
+            <div class="space-y-3">
+              <div class="size-20 mx-auto bg-slate-100 dark:bg-background-dark rounded-full flex items-center justify-center text-primary border border-slate-200 dark:border-white/5">
+                <span class="material-symbols-outlined text-4xl">shopping_bag</span>
+              </div>
+              <span class="font-bold text-sm dark:text-slate-300">Retail</span>
+            </div>
+            <div class="space-y-3">
+              <div class="size-20 mx-auto bg-slate-100 dark:bg-background-dark rounded-full flex items-center justify-center text-primary border border-slate-200 dark:border-white/5">
+                <span class="material-symbols-outlined text-4xl">construction</span>
+              </div>
+              <span class="font-bold text-sm dark:text-slate-300">Construccion</span>
+            </div>
+            <div class="space-y-3">
+              <div class="size-20 mx-auto bg-slate-100 dark:bg-background-dark rounded-full flex items-center justify-center text-primary border border-slate-200 dark:border-white/5">
+                <span class="material-symbols-outlined text-4xl">medical_services</span>
+              </div>
+              <span class="font-bold text-sm dark:text-slate-300">Salud</span>
+            </div>
+            <div class="space-y-3">
+              <div class="size-20 mx-auto bg-slate-100 dark:bg-background-dark rounded-full flex items-center justify-center text-primary border border-slate-200 dark:border-white/5">
+                <span class="material-symbols-outlined text-4xl">event</span>
+              </div>
+              <span class="font-bold text-sm dark:text-slate-300">Eventos</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-background-light dark:bg-background-dark">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="grid lg:grid-cols-2 gap-12 items-start">
+            <div class="space-y-6">
+              <span class="inline-flex items-center gap-2 bg-primary/10 text-primary font-bold uppercase text-xs tracking-widest px-4 py-2 rounded-full">Solicita tu presupuesto</span>
+              <h3 class="text-3xl md:text-4xl font-800 text-slate-900 dark:text-white">Cotiza una solucion a medida</h3>
+              <p class="text-slate-600 dark:text-slate-400">
+                Contanos que necesitas proteger y uno de nuestros especialistas se pondra en contacto para armar un plan de cobertura integral.
+              </p>
+              <div class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary">call</span>
+                  <span>Respuesta en menos de 24 hs habiles.</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary">shield</span>
+                  <span>Asesoria personalizada para cada tipo de operacion.</span>
+                </div>
+              </div>
+            </div>
+            <form class="bg-white dark:bg-neutral-dark border border-slate-200 dark:border-white/5 rounded-2xl p-8 shadow-xl" data-form="budget">
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label class="text-sm font-semibold" for="budget-nombre">Nombre y Apellido</label>
+                  <input id="budget-nombre" name="nombre" type="text" required class="mt-2 w-full rounded-lg border border-slate-200 dark:border-white/10 bg-white dark:bg-background-dark" />
+                </div>
+                <div>
+                  <label class="text-sm font-semibold" for="budget-email">Correo</label>
+                  <input id="budget-email" name="email" type="email" required class="mt-2 w-full rounded-lg border border-slate-200 dark:border-white/10 bg-white dark:bg-background-dark" />
+                </div>
+              </div>
+              <div class="mt-4">
+                <label class="text-sm font-semibold" for="budget-consulta">Consulta</label>
+                <textarea id="budget-consulta" name="consulta" rows="4" required class="mt-2 w-full rounded-lg border border-slate-200 dark:border-white/10 bg-white dark:bg-background-dark"></textarea>
+              </div>
+              <p class="form-feedback mt-4 text-sm font-semibold rounded-lg px-4 py-3"></p>
+              <button type="submit" class="btn-glass mt-4 w-full px-6 py-3 rounded-full text-sm font-bold transition-all">Enviar solicitud</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-neutral-dark pt-20 pb-10 text-slate-300 border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-20">
+        <div class="space-y-6">
+          <div class="flex items-center gap-3">
+            <div class="size-8 bg-primary flex items-center justify-center rounded text-white">
+              <span class="material-symbols-outlined text-xl">shield_person</span>
+            </div>
+            <span class="text-lg font-800 tracking-tight text-white uppercase">Control <span class="text-primary">Risk</span></span>
+          </div>
+          <p class="text-sm leading-relaxed">
+            Estableciendo el estandar de seguridad integral en Cordoba. Su tranquilidad es nuestra mision y el motor de nuestra innovacion.
+          </p>
+          <div class="flex gap-4">
+            <a class="size-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
+              <span class="material-symbols-outlined">public</span>
+            </a>
+            <a class="size-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
+              <span class="material-symbols-outlined">alternate_email</span>
+            </a>
+            <a class="size-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
+              <span class="material-symbols-outlined">groups</span>
+            </a>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <h6 class="text-white font-bold uppercase text-xs tracking-widest">Navegacion</h6>
+          <ul class="space-y-4 text-sm">
+            <li><a class="hover:text-primary transition-colors" href="/#top">Inicio</a></li>
+            <li><a class="hover:text-primary transition-colors" href="/#servicios">Servicios</a></li>
+            <li><a class="hover:text-primary transition-colors" href="/#nosotros">Sobre Nosotros</a></li>
+            <li><a class="hover:text-primary transition-colors" href="/trabaja-con-nosotros.html">Trabaja con nosotros</a></li>
+            <li><a class="hover:text-primary transition-colors" href="/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="space-y-6">
+          <h6 class="text-white font-bold uppercase text-xs tracking-widest">Horarios</h6>
+          <div class="space-y-4 text-sm">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary">schedule</span>
+              <span>Lunes a Viernes<br />9:00 a 18:00 hs</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary">emergency</span>
+              <span>Guardia operativa y Monitoreo 24/7</span>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <h6 class="text-white font-bold uppercase text-xs tracking-widest">Contacto</h6>
+          <div class="space-y-4 text-sm">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary">location_on</span>
+              <span>Mariano Larra 3375, Barrio Urca<br />Cordoba, Argentina</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary">phone_in_talk</span>
+              <span>351-642-4117</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary">mail</span>
+              <span>info@inforce.com.ar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-xs text-slate-500">(c) 2024 Control Risk Security S.A. Todos los derechos reservados.</p>
+        <div class="flex gap-6 text-xs text-slate-500">
+          <a class="hover:text-white" href="#">Habilitacion Provincial #3512</a>
+          <a class="hover:text-white" href="#">Certificacion ISO 9001 (En curso)</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/forms.js"></script>
+  </body>
+</html>
+
+
+
+

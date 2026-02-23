@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html class="dark" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contacto | Control Risk Seguridad</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+    <link rel="stylesheet" href="/styles/tokens.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "var(--color-primary)",
+              "primary-dark": "var(--color-primary-dark)",
+              "background-light": "var(--color-background-light)",
+              "background-dark": "var(--color-background-dark)",
+              "neutral-dark": "var(--color-neutral-dark)",
+              "card-dark": "var(--color-card-dark)",
+            },
+            fontFamily: {
+              display: ["Manrope", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-background-dark text-slate-100">
+    <header class="fixed top-0 z-50 w-full border-b border-white/10 glass-header">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a class="flex items-center gap-3" href="/#top" aria-label="Ir al inicio">
+          <div class="size-10 bg-primary flex items-center justify-center rounded-lg text-white">
+            <span class="material-symbols-outlined text-3xl">shield_person</span>
+          </div>
+          <span class="text-xl font-800 tracking-tight text-white uppercase">Control <span class="text-primary">Risk</span></span>
+        </a>
+        <nav class="hidden md:flex items-center gap-10">
+          <a class="text-sm font-semibold text-white/70 hover:text-primary transition-colors" href="/#top">Inicio</a>
+          <a class="text-sm font-semibold text-white/70 hover:text-primary transition-colors" href="/#servicios">Servicios</a>
+          <a class="text-sm font-semibold text-white/70 hover:text-primary transition-colors" href="/#nosotros">Nosotros</a>
+          <a class="text-sm font-semibold text-white/70 hover:text-primary transition-colors" href="/trabaja-con-nosotros.html">Trabaja con nosotros</a>
+          <a class="text-sm font-semibold text-white hover:text-primary transition-colors" href="/contacto.html">Contacto</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <a class="btn-glass px-6 py-2.5 rounded-full text-sm font-bold transition-all active:scale-95" href="/solicita-presupuesto.html">
+            Solicitar Presupuesto
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-32 pb-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16 space-y-4">
+          <h1 class="text-4xl md:text-5xl font-800 text-white tracking-tight">Contacto</h1>
+          <p class="text-slate-400 text-lg">Estamos aqui para ayudarte con todas tus necesidades de seguridad</p>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-8 items-start">
+          <div class="grid gap-6">
+            <div class="bg-card-dark p-6 rounded-2xl border border-white/5 flex items-center gap-6 group hover:border-primary/30 transition-all">
+              <div class="size-14 bg-primary flex items-center justify-center rounded-full shrink-0 shadow-lg shadow-primary/20">
+                <span class="material-symbols-outlined text-white text-2xl">location_on</span>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-primary uppercase tracking-wider mb-1">Direccion</h3>
+                <p class="text-white font-medium">Mariano Larra 3375, B° Urca, Cordoba, Argentina.</p>
+              </div>
+            </div>
+            <div class="bg-card-dark p-6 rounded-2xl border border-white/5 flex items-center gap-6 group hover:border-primary/30 transition-all">
+              <div class="size-14 bg-primary flex items-center justify-center rounded-full shrink-0 shadow-lg shadow-primary/20">
+                <span class="material-symbols-outlined text-white text-2xl">call</span>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-primary uppercase tracking-wider mb-1">Telefono</h3>
+                <p class="text-white font-medium">3516424117</p>
+              </div>
+            </div>
+            <div class="bg-card-dark p-6 rounded-2xl border border-white/5 flex items-center gap-6 group hover:border-primary/30 transition-all">
+              <div class="size-14 bg-primary flex items-center justify-center rounded-full shrink-0 shadow-lg shadow-primary/20">
+                <span class="material-symbols-outlined text-white text-2xl">mail</span>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-primary uppercase tracking-wider mb-1">Email</h3>
+                <p class="text-white font-medium">info@controlrisk.com.ar</p>
+              </div>
+            </div>
+            <div class="bg-card-dark p-6 rounded-2xl border border-white/5 flex items-center gap-6 group hover:border-primary/30 transition-all">
+              <div class="size-14 bg-primary flex items-center justify-center rounded-full shrink-0 shadow-lg shadow-primary/20">
+                <span class="material-symbols-outlined text-white text-2xl">schedule</span>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-primary uppercase tracking-wider mb-1">Horarios</h3>
+                <p class="text-white font-medium">Lunes a Viernes: 9:00 - 18:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-card-dark rounded-2xl border border-white/5 overflow-hidden flex flex-col h-full min-h-[500px]">
+            <div class="p-6 border-b border-white/5 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">explore</span>
+                <h3 class="text-lg font-bold text-white">Nuestra Ubicacion</h3>
+              </div>
+              <span class="text-xs text-slate-400 font-medium">Visitanos en nuestras oficinas</span>
+            </div>
+            <div class="flex-grow relative map-container">
+              <iframe
+                allowfullscreen
+                class="absolute inset-0"
+                height="100%"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.182433894411!2d-64.2384749234856!3d-31.381534994539115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432992911b33923%3A0x8e87d0c35520a02b!2sMariano%20Larra%203375%2C%20X5000%20Cordoba!5e0!3m2!1ses!2sar!4v1710000000000!5m2!1ses!2sar"
+                style="border: 0"
+                width="100%"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-neutral-dark pt-20 pb-10 text-slate-300 border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-6 mb-20">
+        <div class="bg-card-dark p-10 rounded-3xl border border-white/5 shadow-2xl relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+          <div class="grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div>
+              <h2 class="text-3xl font-800 text-white mb-4 leading-tight">Necesitas un plan a medida?</h2>
+              <p class="text-slate-400 mb-8">Completa el formulario para recibir una asesoria personalizada y un presupuesto ajustado a tus necesidades de seguridad.</p>
+              <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary">verified</span>
+                  <span class="text-sm text-slate-200">Respuesta en menos de 24hs</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary">verified</span>
+                  <span class="text-sm text-slate-200">Asesoramiento profesional sin cargo</span>
+                </div>
+              </div>
+            </div>
+            <form class="space-y-4" data-form="budget">
+              <div class="grid grid-cols-2 gap-4">
+                <input class="bg-background-dark/50 border-white/10 rounded-xl px-4 py-3 text-sm focus:border-primary focus:ring-1 focus:ring-primary transition-all" name="nombre" placeholder="Nombre y Apellido" type="text" required />
+                <input class="bg-background-dark/50 border-white/10 rounded-xl px-4 py-3 text-sm focus:border-primary focus:ring-1 focus:ring-primary transition-all" name="email" placeholder="Email" type="email" required />
+              </div>
+              <textarea class="w-full bg-background-dark/50 border-white/10 rounded-xl px-4 py-3 text-sm focus:border-primary focus:ring-1 focus:ring-primary transition-all" name="consulta" placeholder="En que podemos ayudarte?" rows="4" required></textarea>
+              <p class="form-feedback text-sm font-semibold rounded-lg px-4 py-3"></p>
+              <button class="w-full bg-primary-dark hover:bg-primary text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 transition-all active:scale-[0.98]" type="submit">
+                Solicita tu Presupuesto
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-20">
+        <div class="space-y-6">
+          <div class="flex items-center gap-3">
+            <div class="size-8 bg-primary flex items-center justify-center rounded text-white">
+              <span class="material-symbols-outlined text-xl">shield_person</span>
+            </div>
+            <span class="text-lg font-800 tracking-tight text-white uppercase">Control <span class="text-primary">Risk</span></span>
+          </div>
+          <p class="text-sm leading-relaxed">
+            Estableciendo el estandar de seguridad integral en Cordoba. Su tranquilidad es nuestra mision y el motor de nuestra innovacion.
+          </p>
+          <div class="flex gap-4">
+            <a class="size-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
+              <span class="material-symbols-outlined">public</span>
+            </a>
+            <a class="size-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
+              <span class="material-symbols-outlined">alternate_email</span>
+            </a>
+            <a class="size-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
+              <span class="material-symbols-outlined">groups</span>
+            </a>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <h6 class="text-white font-bold uppercase text-xs tracking-widest">Navegacion</h6>
+          <ul class="space-y-4 text-sm">
+            <li><a class="hover:text-primary transition-colors" href="/#top">Inicio</a></li>
+            <li><a class="hover:text-primary transition-colors" href="/#servicios">Servicios</a></li>
+            <li><a class="hover:text-primary transition-colors" href="/#nosotros">Sobre Nosotros</a></li>
+            <li><a class="hover:text-primary transition-colors" href="/trabaja-con-nosotros.html">Trabaja con nosotros</a></li>
+            <li><a class="hover:text-primary transition-colors" href="/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="space-y-6">
+          <h6 class="text-white font-bold uppercase text-xs tracking-widest">Horarios</h6>
+          <div class="space-y-4 text-sm">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary">schedule</span>
+              <span>Lunes a Viernes<br />9:00 a 18:00 hs</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary">emergency</span>
+              <span>Guardia operativa y Monitoreo 24/7</span>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <h6 class="text-white font-bold uppercase text-xs tracking-widest">Contacto</h6>
+          <div class="space-y-4 text-sm">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary">location_on</span>
+              <span>Mariano Larra 3375, Barrio Urca<br />Cordoba, Argentina</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary">phone_in_talk</span>
+              <span>351-642-4117</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary">mail</span>
+              <span>info@controlrisk.com.ar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-xs text-slate-500">(c) 2024 Control Risk Security S.A. Todos los derechos reservados.</p>
+        <div class="flex gap-6 text-xs text-slate-500">
+          <a class="hover:text-white" href="#">Habilitacion Provincial #3512</a>
+          <a class="hover:text-white" href="#">Certificacion ISO 9001 (En curso)</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/forms.js"></script>
+  </body>
+</html>
