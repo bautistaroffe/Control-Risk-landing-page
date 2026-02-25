@@ -30,6 +30,25 @@
   animation-play-state: paused;
 }
 
+.logo-track {
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding-right: 4rem;
+}
+
+@media (min-width: 768px) {
+  .logo-group {
+    gap: 6rem;
+    padding-right: 6rem;
+  }
+}
+
 .client-logo-item {
   display: flex;
   align-items: center;

@@ -1,5 +1,8 @@
-﻿# dependencies
+# dependencies
 node_modules/
+.npm/
+.pnpm-store/
+.yarn/
 
 # environment
 .env
@@ -13,14 +16,27 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
 
 # build outputs
 /dist/
 /.next/
 /.vercel/
+/.cache/
+/coverage/
+*.tsbuildinfo
 
 # OS / editor
 .DS_Store
 Thumbs.db
 .idea/
 .vscode/
+*.swp
+*.swo
+
+# runtime files
+tmp/
+temp/
+.tmp/
+*.pid
+*.pid.lock
