@@ -18,6 +18,10 @@ const formConfigs = {
 };
 
 const getFeedbackEl = (form) => form.querySelector(".form-feedback");
+const antiBotFieldNames = {
+  honeypot: "website",
+  startedAt: "form_started_at",
+};
 
 const setFeedback = (form, type, message) => {
   const feedback = getFeedbackEl(form);
@@ -135,5 +139,35 @@ const handleSubmit = async (event) => {
 };
 
 document.querySelectorAll("form[data-form]").forEach((form) => {
+  if (!form.querySelector(`input[name="${antiBotFieldNames.honeypot}"]`)) {
+    const honeypot = document.createElement("input");
+    honeypot.type = "text";
+    honeypot.name = antiBotFieldNames.honeypot;
+    honeypot.autocomplete = "off";
+    honeypot.tabIndex = -1;
+    honeypot.ariaHidden = "true";
+    honeypot.style.position = "absolute";
+    honeypot.style.left = "-9999px";
+    honeypot.style.width = "1px";
+    honeypot.style.height = "1px";
+    honeypot.style.opacity = "0";
+    form.appendChild(honeypot);
+  }
+
+  let startedInput = form.querySelector(`input[name="${antiBotFieldNames.startedAt}"]`);
+  if (!startedInput) {
+    startedInput = document.createElement("input");
+    startedInput.type = "hidden";
+    startedInput.name = antiBotFieldNames.startedAt;
+    form.appendChild(startedInput);
+  }
+  startedInput.value = String(Date.now());
+
+  form.addEventListener("input", () => {
+    if (!startedInput.value) {
+      startedInput.value = String(Date.now());
+    }
+  });
+
   form.addEventListener("submit", handleSubmit);
 });
