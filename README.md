@@ -48,22 +48,9 @@ Landing page con backend minimo en Node.js/Express para formularios de presupues
 - `POST /api/trabaja-con-nosotros`
   - body: `nombre`, `email`, `telefono`, `cv` (archivo)
 
-**Variables de entorno**
-Crear un `.env` basado en `.env.example`.
-- `SMTP_HOST`
-- `SMTP_PORT`
-- `SMTP_USER`
-- `SMTP_PASS`
-- `MAIL_FROM`
-- `MAIL_TO`
-
 **Ejecucion local**
 ```powershell
 npm install
 npm start
 ```
 Abrir `http://localhost:3000`.
-
-**Notas**
-- Si falta SMTP, el backend responde con error indicando configuracion pendiente.
-- El CV se procesa en memoria y se adjunta al email.
