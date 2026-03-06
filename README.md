@@ -3,10 +3,9 @@
 Landing page con backend minimo en Node.js/Express para formularios de presupuesto y postulaciones laborales con adjunto de CV.
 
 **Stack**
-- Frontend: HTML + Tailwind (via CDN)
-- Backend: Node.js + Express
-- Emails: Nodemailer (SMTP propio)
-- Uploads: Multer (CV en memoria)
+- Frontend: HTML, JavaScript (forms.js), Tailwind CSS (via CDN)
+- UX/UI: Tailwind CSS, tokens de diseño en `public/styles/tokens.css`, estilos globales en `public/styles/main.css`
+- Build & Deploy: Node.js, Express, Nodemailer (SMTP propio), Multer, npm
 
 **Arquitectura**
 - `public/` contiene todas las paginas estaticas, estilos, scripts y assets.
