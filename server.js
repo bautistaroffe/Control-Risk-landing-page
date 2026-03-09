@@ -2,6 +2,7 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const multer = require("multer");
+const crypto = require("crypto");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -21,6 +22,25 @@ const allowedCvTypes = [
   "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
 ];
 
+const decryptMailTo = (encryptedValue, keyValue) => {
+  const parts = String(encryptedValue || "").split(":");
+  if (parts.length !== 3) {
+    const error = new Error("MAIL_TO_ENCRYPTED_INVALID_FORMAT");
+    error.code = "MAIL_TO_ENCRYPTED_INVALID_FORMAT";
+    throw error;
+  }
+
+  const [ivB64, cipherB64, tagB64] = parts;
+  const iv = Buffer.from(ivB64, "base64");
+  const ciphertext = Buffer.from(cipherB64, "base64");
+  const authTag = Buffer.from(tagB64, "base64");
+  const key = crypto.createHash("sha256").update(String(keyValue)).digest();
+
+  const decipher = crypto.createDecipheriv("aes-256-gcm", key, iv);
+  decipher.setAuthTag(authTag);
+  return Buffer.concat([decipher.update(ciphertext), decipher.final()]).toString("utf8").trim();
+};
+
 const getSmtpConfig = () => {
   const {
     SMTP_HOST,
@@ -29,9 +49,16 @@ const getSmtpConfig = () => {
     SMTP_PASS,
     MAIL_FROM,
     MAIL_TO,
+    MAIL_TO_ENCRYPTED,
+    MAIL_TO_KEY,
   } = process.env;
+  let to = MAIL_TO;
 
-  if (!SMTP_HOST || !SMTP_PORT || !SMTP_USER || !SMTP_PASS || !MAIL_FROM || !MAIL_TO) {
+  if (!to && MAIL_TO_ENCRYPTED && MAIL_TO_KEY) {
+    to = decryptMailTo(MAIL_TO_ENCRYPTED, MAIL_TO_KEY);
+  }
+
+  if (!SMTP_HOST || !SMTP_PORT || !SMTP_USER || !SMTP_PASS || !MAIL_FROM || !to) {
     return null;
   }
 
@@ -44,7 +71,7 @@ const getSmtpConfig = () => {
       pass: SMTP_PASS,
     },
     from: MAIL_FROM,
-    to: MAIL_TO,
+    to,
   };
 };
 
@@ -129,7 +156,7 @@ app.post("/api/solicitar-presupuesto", upload.none(), async (req, res) => {
   }
 
   try {
-    const subject = `Nuevo presupuesto - ${data.nombre}`;
+    const subject = "Control Risk- consulta de cotizacion";
     const text = [
       `Nombre: ${data.nombre}`,
       `Correo: ${data.email}`,
@@ -163,7 +190,7 @@ app.post("/api/trabaja-con-nosotros", upload.single("cv"), async (req, res) => {
   }
 
   try {
-    const subject = `Nueva postulacion - ${data.nombre}`;
+    const subject = "Control Risk - nueva postulacion";
     const text = [
       `Nombre: ${data.nombre}`,
       `Correo: ${data.email}`,

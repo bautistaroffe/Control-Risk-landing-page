@@ -25,6 +25,7 @@ lerna-debug.log*
 /.cache/
 /coverage/
 *.tsbuildinfo
+.netlify/
 
 # OS / editor
 .DS_Store
