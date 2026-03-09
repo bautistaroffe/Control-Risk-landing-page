@@ -132,6 +132,12 @@ const handleSubmit = async (event) => {
     }
 
     form.reset();
+    const fileFeedback = form.querySelector("[data-file-feedback]");
+    if (fileFeedback) {
+      fileFeedback.textContent = "No hay archivo seleccionado.";
+      fileFeedback.classList.remove("text-emerald-300");
+      fileFeedback.classList.add("text-slate-500");
+    }
     setFeedback(form, "success", "Mensaje enviado. Te vamos a contactar a la brevedad.");
   } catch (error) {
     setFeedback(form, "error", "Ocurrió un error de conexión. Intentá nuevamente.");
@@ -140,6 +146,25 @@ const handleSubmit = async (event) => {
 
 document.querySelectorAll("form[data-form]").forEach((form) => {
   form.setAttribute("novalidate", "novalidate");
+
+  const fileInput = form.querySelector("input[type='file']");
+  const fileFeedback = form.querySelector("[data-file-feedback]");
+  if (fileInput && fileFeedback) {
+    fileInput.addEventListener("change", () => {
+      const file = fileInput.files?.[0];
+      if (!file) {
+        fileFeedback.textContent = "No hay archivo seleccionado.";
+        fileFeedback.classList.remove("text-emerald-300");
+        fileFeedback.classList.add("text-slate-500");
+        return;
+      }
+
+      const sizeMb = (file.size / (1024 * 1024)).toFixed(2);
+      fileFeedback.textContent = `Archivo cargado: ${file.name} (${sizeMb} MB)`;
+      fileFeedback.classList.remove("text-slate-500");
+      fileFeedback.classList.add("text-emerald-300");
+    });
+  }
 
   if (!form.querySelector(`input[name="${antiBotFieldNames.honeypot}"]`)) {
     const honeypot = document.createElement("input");
