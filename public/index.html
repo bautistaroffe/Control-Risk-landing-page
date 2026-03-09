@@ -40,22 +40,45 @@
     </script>
   </head>
   <body id="top" class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
-    <header class="fixed top-0 z-50 w-full border-b border-white/10 glass-header">
-      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <a class="flex items-center gap-3" href="/#top" aria-label="Ir al inicio">
+    <header class="site-header fixed top-0 z-50 w-full border-b border-white/10 glass-header">
+      <div class="site-header-inner max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-4">
+        <a class="site-brand flex items-center gap-3 shrink-0" href="/#top" aria-label="Ir al inicio">
           <img class="h-[7.5rem] w-auto" src="/assets/branding/control-risk-logo.png" alt="Control Risk" />
         </a>
-        <nav class="hidden md:flex items-center gap-10">
+        <nav class="site-nav hidden md:flex items-center gap-10">
           <a class="text-sm font-semibold text-white hover:text-primary transition-colors" href="/#top">Inicio</a>
           <a class="text-sm font-semibold text-white/70 hover:text-primary transition-colors" href="/#servicios">Servicios</a>
           <a class="text-sm font-semibold text-white/70 hover:text-primary transition-colors" href="/#nosotros">Nosotros</a>
           <a class="text-sm font-semibold text-white/70 hover:text-primary transition-colors" href="/trabaja-con-nosotros.html">Trabaja con nosotros</a>
           <a class="text-sm font-semibold text-white/70 hover:text-primary transition-colors" href="/contacto.html">Contacto</a>
         </nav>
-        <div class="flex items-center gap-4">
-          <a class="btn-glass px-6 py-2.5 rounded-full text-sm font-bold transition-all active:scale-95" href="/solicita-presupuesto.html">
+        <div class="site-header-actions flex items-center justify-end gap-3 shrink-0">
+          <a class="site-header-cta btn-glass px-6 py-2.5 rounded-full text-sm font-bold transition-all active:scale-95" href="/solicita-presupuesto.html">
             Solicitar Presupuesto
           </a>
+          <button
+            class="site-menu-toggle hidden items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition-all hover:border-primary/40 hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary/60"
+            type="button"
+            aria-label="Abrir menú de navegación"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span class="material-symbols-outlined text-[1.35rem]">menu</span>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="site-mobile-menu" hidden>
+        <div class="site-mobile-menu-panel mx-6 mb-4 rounded-3xl border border-white/10">
+          <nav class="flex flex-col gap-2 p-3">
+            <a class="site-mobile-link is-active" href="/#top">Inicio</a>
+            <a class="site-mobile-link" href="/#servicios">Servicios</a>
+            <a class="site-mobile-link" href="/#nosotros">Nosotros</a>
+            <a class="site-mobile-link" href="/trabaja-con-nosotros.html">Trabaja con nosotros</a>
+            <a class="site-mobile-link" href="/contacto.html">Contacto</a>
+            <a class="site-mobile-cta btn-glass mt-3 px-6 py-3 rounded-full text-sm font-bold text-center transition-all active:scale-95" href="/solicita-presupuesto.html">
+              Solicitar Presupuesto
+            </a>
+          </nav>
         </div>
       </div>
     </header>
@@ -422,10 +445,10 @@
       </div>
     </footer>
 
+    <script src="/js/nav-menu.js"></script>
     <script src="/js/forms.js"></script>
   </body>
 </html>
-
 
 
 
