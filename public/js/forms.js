@@ -61,7 +61,7 @@ const validateBudget = (data, minMessageLength) => {
   const common = validateCommon(data);
   if (common) return common;
   if (!data.consulta || data.consulta.length < minMessageLength) {
-    return "Contanos en que podemos ayudarte.";
+    return "Contanos en qué podemos ayudarte.";
   }
   return null;
 };
@@ -79,7 +79,7 @@ const validateWork = (data, file) => {
     return "Formato de CV no permitido. Usa PDF o DOC/DOCX.";
   }
   if (file.size > maxCvSizeBytes) {
-    return "El archivo supera el limite permitido (2MB).";
+    return "El archivo supera el límite permitido (2MB).";
   }
   return null;
 };
@@ -127,14 +127,14 @@ const handleSubmit = async (event) => {
     const payload = await response.json().catch(() => ({}));
 
     if (!response.ok) {
-      setFeedback(form, "error", payload.message || "No pudimos enviar el formulario. Intentá mas tarde.");
+      setFeedback(form, "error", payload.message || "No pudimos enviar el formulario. Intentá más tarde.");
       return;
     }
 
     form.reset();
     setFeedback(form, "success", "Mensaje enviado. Te vamos a contactar a la brevedad.");
   } catch (error) {
-    setFeedback(form, "error", "Ocurrio un error de conexion. Intenta nuevamente.");
+    setFeedback(form, "error", "Ocurrió un error de conexión. Intentá nuevamente.");
   }
 };
 
@@ -171,3 +171,4 @@ document.querySelectorAll("form[data-form]").forEach((form) => {
 
   form.addEventListener("submit", handleSubmit);
 });
+

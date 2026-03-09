@@ -64,38 +64,20 @@
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-16 space-y-4">
           <h1 class="text-4xl md:text-5xl font-800 text-white tracking-tight">Contacto</h1>
-          <p class="text-slate-400 text-lg">Estamos aqui para ayudarte con todas tus necesidades de seguridad</p>
+          <p class="text-slate-400 text-lg">Estamos aquí para ayudarte con todas tus necesidades de seguridad</p>
         </div>
         <div class="grid lg:grid-cols-2 gap-8 items-start">
           <div class="grid gap-6">
-            <div class="bg-card-dark p-6 rounded-2xl border border-white/5 flex items-center gap-6 group hover:border-primary/30 transition-all">
+            <div class="bg-card-dark p-6 rounded-2xl border border-white/5 flex items-center gap-6 group hover:border-primary/30 transition-all h-full">
               <div class="size-14 bg-primary flex items-center justify-center rounded-full shrink-0 shadow-lg shadow-primary/20">
                 <span class="material-symbols-outlined text-white text-2xl">location_on</span>
               </div>
               <div>
-                <h3 class="text-sm font-bold text-primary uppercase tracking-wider mb-1">Direccion</h3>
-                <p class="text-white font-medium">Av. Las Acacias 392 Piso 1 - Of 2</p>
+                <h3 class="text-sm font-bold text-primary uppercase tracking-wider mb-1">Dirección</h3>
+                <p class="text-white font-medium">Av. Las Acacias 392 Piso 1</p>
               </div>
             </div>
-            <div class="bg-card-dark p-6 rounded-2xl border border-white/5 flex items-center gap-6 group hover:border-primary/30 transition-all">
-              <div class="size-14 bg-primary flex items-center justify-center rounded-full shrink-0 shadow-lg shadow-primary/20">
-                <span class="material-symbols-outlined text-white text-2xl">call</span>
-              </div>
-              <div>
-                <h3 class="text-sm font-bold text-primary uppercase tracking-wider mb-1">Telefono</h3>
-                <p class="text-white font-medium">3516424117</p>
-              </div>
-            </div>
-            <div class="bg-card-dark p-6 rounded-2xl border border-white/5 flex items-center gap-6 group hover:border-primary/30 transition-all">
-              <div class="size-14 bg-primary flex items-center justify-center rounded-full shrink-0 shadow-lg shadow-primary/20">
-                <span class="material-symbols-outlined text-white text-2xl">mail</span>
-              </div>
-              <div>
-                <h3 class="text-sm font-bold text-primary uppercase tracking-wider mb-1">Email</h3>
-                <p class="text-white font-medium">info@controlrisk.com.ar</p>
-              </div>
-            </div>
-            <div class="bg-card-dark p-6 rounded-2xl border border-white/5 flex items-center gap-6 group hover:border-primary/30 transition-all">
+            <div class="bg-card-dark p-6 rounded-2xl border border-white/5 flex items-center gap-6 group hover:border-primary/30 transition-all h-full">
               <div class="size-14 bg-primary flex items-center justify-center rounded-full shrink-0 shadow-lg shadow-primary/20">
                 <span class="material-symbols-outlined text-white text-2xl">schedule</span>
               </div>
@@ -109,7 +91,7 @@
             <div class="p-6 border-b border-white/5 flex items-center justify-between">
               <div class="flex items-center gap-3">
                 <span class="material-symbols-outlined text-primary">explore</span>
-                <h3 class="text-lg font-bold text-white">Nuestra Ubicacion</h3>
+                <h3 class="text-lg font-bold text-white">Nuestra Ubicación</h3>
               </div>
               <span class="text-xs text-slate-400 font-medium">Visitanos en nuestras oficinas</span>
             </div>
@@ -130,39 +112,36 @@
       </div>
     </main>
 
-    <footer class="bg-neutral-dark pt-20 pb-10 text-slate-300 border-t border-white/5">
-      <div class="max-w-7xl mx-auto px-6 mb-20">
-        <div class="bg-card-dark p-10 rounded-3xl border border-white/5 shadow-2xl relative overflow-hidden">
-          <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
-          <div class="grid md:grid-cols-2 gap-12 items-center relative z-10">
-            <div>
-              <h2 class="text-3xl font-800 text-white mb-4 leading-tight">Necesitas un plan a medida?</h2>
-              <p class="text-slate-400 mb-8">Completa el formulario para recibir una asesoria personalizada y un presupuesto ajustado a tus necesidades de seguridad.</p>
-              <div class="space-y-4">
-                <div class="flex items-center gap-3">
-                  <span class="material-symbols-outlined text-primary">verified</span>
-                  <span class="text-sm text-slate-200">Respuesta en menos de 24hs</span>
-                </div>
-                <div class="flex items-center gap-3">
-                  <span class="material-symbols-outlined text-primary">verified</span>
-                  <span class="text-sm text-slate-200">Asesoramiento profesional sin cargo</span>
-                </div>
+    <footer class="bg-neutral-dark pt-20 pb-10 text-slate-300">
+      <section class="w-full py-20 border-b border-white/5 bg-black mb-20">
+        <div class="max-w-4xl mx-auto px-6">
+          <h2 class="text-4xl md:text-5xl font-light text-white mb-12 text-center md:text-left">
+            Solicita tu <span class="text-primary font-bold">presupuesto</span>
+          </h2>
+          <form class="space-y-12" data-form="budget">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div class="flex flex-col">
+                <label class="text-xs font-bold text-white uppercase tracking-widest mb-2" for="budget-nombre">Nombre y Apellido</label>
+                <input id="budget-nombre" name="nombre" class="bg-transparent border-0 border-b border-primary py-3 px-0 focus:ring-0 focus:border-white transition-colors text-white placeholder:text-slate-700" placeholder="Ingrese su nombre completo" type="text" required />
+              </div>
+              <div class="flex flex-col">
+                <label class="text-xs font-bold text-white uppercase tracking-widest mb-2" for="budget-email">Email</label>
+                <input id="budget-email" name="email" class="bg-transparent border-0 border-b border-primary py-3 px-0 focus:ring-0 focus:border-white transition-colors text-white placeholder:text-slate-700" placeholder="ejemplo@correo.com" type="email" required />
               </div>
             </div>
-            <form class="space-y-4" data-form="budget">
-              <div class="grid grid-cols-2 gap-4">
-                <input class="bg-background-dark/50 border-white/10 rounded-xl px-4 py-3 text-sm focus:border-primary focus:ring-1 focus:ring-primary transition-all" name="nombre" placeholder="Nombre y Apellido" type="text" required />
-                <input class="bg-background-dark/50 border-white/10 rounded-xl px-4 py-3 text-sm focus:border-primary focus:ring-1 focus:ring-primary transition-all" name="email" placeholder="Email" type="email" required />
-              </div>
-              <textarea class="w-full bg-background-dark/50 border-white/10 rounded-xl px-4 py-3 text-sm focus:border-primary focus:ring-1 focus:ring-primary transition-all" name="consulta" placeholder="En que podemos ayudarte?" rows="4" required></textarea>
-              <p class="form-feedback text-sm font-semibold rounded-lg px-4 py-3"></p>
-              <button class="w-full bg-primary-dark hover:bg-primary text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 transition-all active:scale-[0.98]" type="submit">
-                Solicita tu Presupuesto
+            <div class="flex flex-col">
+              <label class="text-xs font-bold text-white uppercase tracking-widest mb-2" for="budget-consulta">Consulta</label>
+              <textarea id="budget-consulta" name="consulta" class="bg-transparent border-0 border-b border-primary py-3 px-0 focus:ring-0 focus:border-white transition-colors text-white placeholder:text-slate-700 resize-none" placeholder="¿En qué podemos ayudarte?" rows="2" required></textarea>
+            </div>
+            <p class="form-feedback text-sm font-semibold rounded-lg px-4 py-3"></p>
+            <div class="pt-6">
+              <button class="w-full md:w-auto px-20 py-4 bg-[#450a0a] border border-[#7f1d1d] hover:bg-[#7f1d1d] text-white rounded-lg font-bold text-lg transition-all uppercase tracking-widest shadow-lg" type="submit">
+                Enviar
               </button>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
-      </div>
+      </section>
       <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-20">
         <div class="space-y-6">
           <div class="flex items-center gap-3">
@@ -170,7 +149,7 @@
           </div>
         </div>
         <div class="space-y-6">
-          <h6 class="text-white font-bold uppercase text-xs tracking-widest">Navegacion</h6>
+          <h6 class="text-white font-bold uppercase text-xs tracking-widest">Navegación</h6>
           <ul class="space-y-4 text-sm">
             <li><a class="hover:text-primary transition-colors" href="/#top">Inicio</a></li>
             <li><a class="hover:text-primary transition-colors" href="/#servicios">Servicios</a></li>
@@ -197,15 +176,7 @@
           <div class="space-y-4 text-sm">
             <div class="flex items-start gap-3">
               <span class="material-symbols-outlined text-primary">location_on</span>
-              <span>Av. Las Acacias 392 Piso 1 - Of 2</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <span class="material-symbols-outlined text-primary">phone_in_talk</span>
-              <span>351-642-4117</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <span class="material-symbols-outlined text-primary">mail</span>
-              <span>info@controlrisk.com.ar</span>
+              <span>Av. Las Acacias 392 Piso 1</span>
             </div>
           </div>
         </div>
@@ -213,8 +184,7 @@
       <div class="max-w-7xl mx-auto px-6 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
         <p class="text-xs text-slate-500">(c) 2024 Control Risk Security S.A. Todos los derechos reservados.</p>
         <div class="flex gap-6 text-xs text-slate-500">
-          <a class="hover:text-white" href="#">Habilitacion Provincial #3512</a>
-          <a class="hover:text-white" href="#">Certificacion ISO 9001 (En curso)</a>
+          <a class="hover:text-white" href="#">Habilitado para prestar servicios de seguridad privada por el Ministerio de Seguridad de la Provincia de Córdoba</a>
         </div>
       </div>
     </footer>

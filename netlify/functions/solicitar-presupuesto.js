@@ -56,7 +56,7 @@ exports.handler = async (event) => {
   }
 
   try {
-    const subject = `Nuevo presupuesto - ${clean.nombre}`;
+    const subject = "Control Risk- consulta de cotizacion";
     const text = [`Nombre: ${clean.nombre}`, `Correo: ${clean.email}`, `Consulta: ${clean.consulta}`].join("\n");
     const html = buildHtml("Solicitud de presupuesto", {
       Nombre: clean.nombre,

@@ -65,7 +65,7 @@ exports.handler = async (event) => {
   }
 
   try {
-    const subject = `Nueva postulacion - ${clean.nombre}`;
+    const subject = "Control Risk - nueva postulacion";
     const text = [
       `Nombre: ${clean.nombre}`,
       `Correo: ${clean.email}`,
