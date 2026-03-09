@@ -139,6 +139,8 @@ const handleSubmit = async (event) => {
 };
 
 document.querySelectorAll("form[data-form]").forEach((form) => {
+  form.setAttribute("novalidate", "novalidate");
+
   if (!form.querySelector(`input[name="${antiBotFieldNames.honeypot}"]`)) {
     const honeypot = document.createElement("input");
     honeypot.type = "text";
