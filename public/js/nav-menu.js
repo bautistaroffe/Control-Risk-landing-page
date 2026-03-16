@@ -22,9 +22,9 @@
     header.classList.remove("is-menu-open");
     toggle.setAttribute("aria-expanded", "false");
     toggle.setAttribute("aria-label", "Abrir menú de navegación");
-    const icon = toggle.querySelector(".material-symbols-outlined");
-    if (icon) {
-      icon.textContent = "menu";
+    const iconUse = toggle.querySelector("[data-menu-icon-use]");
+    if (iconUse) {
+      iconUse.setAttribute("href", "/assets/icons.svg#menu");
     }
     menu.hidden = true;
   }
@@ -33,9 +33,9 @@
     header.classList.add("is-menu-open");
     toggle.setAttribute("aria-expanded", "true");
     toggle.setAttribute("aria-label", "Cerrar menú de navegación");
-    const icon = toggle.querySelector(".material-symbols-outlined");
-    if (icon) {
-      icon.textContent = "close";
+    const iconUse = toggle.querySelector("[data-menu-icon-use]");
+    if (iconUse) {
+      iconUse.setAttribute("href", "/assets/icons.svg#close");
     }
     menu.hidden = false;
   }
