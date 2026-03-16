@@ -13,7 +13,20 @@ const upload = multer({
 
 app.use(express.json({ limit: "1mb" }));
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "public")));
+app.use(
+  express.static(path.join(__dirname, "public"), {
+    setHeaders(res, filePath) {
+      if (/\.(?:css|js|png|jpg|jpeg|gif|svg|webp|avif|woff2)$/i.test(filePath)) {
+        res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
+        return;
+      }
+
+      if (/\.html$/i.test(filePath)) {
+        res.setHeader("Cache-Control", "public, max-age=0, must-revalidate");
+      }
+    },
+  }),
+);
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const allowedCvTypes = [

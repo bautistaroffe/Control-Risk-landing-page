@@ -2,6 +2,18 @@
   font-family: "Manrope", sans-serif;
 }
 
+.icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  flex: none;
+}
+
+.icon use {
+  stroke: currentColor;
+}
+
 .glass-header {
   background: rgba(var(--color-background-dark-rgb), 0.9);
   backdrop-filter: blur(12px);
@@ -97,6 +109,20 @@
   text-shadow: 0 0 20px rgba(var(--color-primary-rgb), 0.4);
 }
 
+.hero-media {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  will-change: opacity;
+}
+
+.hero-media.is-ready {
+  background-image: url("/assets/gif_fondo.gif");
+  opacity: 1;
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -171,6 +197,24 @@
 
   .client-logo--tecmaq {
     height: 44px;
+  }
+
+  .logo-carousel-container {
+    overflow-x: auto;
+  }
+
+  .animate-scroll {
+    animation-duration: 40s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-scroll {
+    animation: none;
+  }
+
+  .hero-media {
+    display: none;
   }
 }
 
