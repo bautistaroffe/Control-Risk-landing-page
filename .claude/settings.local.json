@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs ls:*)",
+      "Bash(grep -r \"canonical\\\\|og:url\\\\|controlrisk\" C:UsersroffeOneDriveDesktopextraDiseñoControlRiskControl-Risk-landing-page/public --include=*.html)",
+      "Bash(grep -r \"netlify\\\\|Netlify\\\\|vercel\\\\|Vercel\\\\|deploy\" C:UsersroffeOneDriveDesktopextraDiseñoControlRiskControl-Risk-landing-page --include=*.md --include=*.json --include=*.toml)",
+      "WebFetch(domain:www.controlrisk-seguridad.com)",
+      "Bash(where ffmpeg:*)",
+      "Bash(where magick:*)",
+      "Bash(where convert:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(where tailwindcss:*)",
+      "Bash(npm install:*)",
+      "Bash(grep -c \"cdn.tailwindcss\" public/*.html)"
+    ]
+  }
+}
