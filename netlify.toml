@@ -1,6 +1,13 @@
 [build]
+  command = "npm run build:css"
   publish = "public"
   functions = "netlify/functions"
+
+[[redirects]]
+  from = "https://controlrisk-seguridad.netlify.app/*"
+  to = "https://www.controlrisk-seguridad.com/:splat"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/api/solicitar-presupuesto"

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://controlrisk-seguridad.netlify.app/sitemap.xml
+Sitemap: https://www.controlrisk-seguridad.com/sitemap.xml

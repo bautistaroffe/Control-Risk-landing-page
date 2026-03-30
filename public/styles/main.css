@@ -109,17 +109,12 @@
   text-shadow: 0 0 20px rgba(var(--color-primary-rgb), 0.4);
 }
 
-.hero-media {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.hero-video {
   opacity: 0;
   transition: opacity 0.5s ease;
-  will-change: opacity;
 }
 
-.hero-media.is-ready {
-  background-image: url("/assets/gif_fondo.gif");
+.hero-video.is-ready {
   opacity: 1;
 }
 
@@ -212,10 +207,6 @@
   .animate-scroll {
     animation: none;
   }
-
-  .hero-media {
-    display: none;
-  }
 }
 
 .btn-glass {
@@ -238,21 +229,65 @@
 }
 
 .input-line {
-  background: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
   border: 0;
   border-bottom: 1px solid var(--color-primary);
+  border-radius: 0;
   padding: 0.5rem 0;
   color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  font-size: 16px;
   transition: border-color 0.2s ease;
 }
 
 .input-line::placeholder {
   color: rgb(100 116 139);
+  -webkit-text-fill-color: rgb(100 116 139);
 }
 
 .input-line:focus {
   outline: none;
+  background-color: transparent;
   border-bottom-color: #ffffff;
+}
+
+.input-line:-webkit-autofill,
+.input-line:-webkit-autofill:hover,
+.input-line:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.dark input[type="text"],
+.dark input[type="email"],
+.dark input[type="tel"],
+.dark input[type="number"],
+.dark textarea,
+.dark select {
+  -webkit-appearance: none;
+  appearance: none;
+  color-scheme: dark;
+  font-size: 16px;
+}
+
+.dark input.text-white,
+.dark textarea.text-white {
+  -webkit-text-fill-color: #ffffff;
+}
+
+.dark input.bg-transparent,
+.dark textarea.bg-transparent {
+  -webkit-text-fill-color: #ffffff;
+}
+
+.dark input:-webkit-autofill,
+.dark textarea:-webkit-autofill {
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px #0f1115 inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .map-container {
