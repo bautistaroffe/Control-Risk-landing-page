@@ -10,6 +10,12 @@
   force = true
 
 [[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/api/solicitar-presupuesto"
   to = "/.netlify/functions/solicitar-presupuesto"
   status = 200
